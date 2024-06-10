@@ -35,7 +35,7 @@ class SandBox extends StatelessWidget {
             height: 12,
           ),
           ElevatedButton(
-            onPressed: () async {
+            onPressed: () {
               MovieRepository().editMovie(
                 const Movie(
                     id: '0HyYUcCNeFUZTrmSnJct',
@@ -46,6 +46,22 @@ class SandBox extends StatelessWidget {
               );
             },
             child: const Text('Edit movie'),
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              MovieRepository().deleteMovie(
+                const Movie(
+                    id: '0HyYUcCNeFUZTrmSnJct',
+                    name: 'Gunshy',
+                    imageUrl:
+                        'http://cdn0.nflximg.net/images/4478/2254478.jpg'),
+                'movies',
+              );
+            },
+            child: const Text('Remove movie'),
           ),
           const SizedBox(
             height: 12,

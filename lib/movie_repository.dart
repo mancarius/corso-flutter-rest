@@ -62,6 +62,12 @@ class MovieRepository {
     );
   }
 
+  Future<void> deleteMovie(Movie movie, String type) async {
+    CollectionReference movies = instance.collection(type);
+    // Call the user's CollectionReference to add a new movie
+    movies.doc(movie.id).delete();
+  }
+
   Future<List<Movie>> loadMovieJsonFromAssets(String filePath) async {
     String jsonString = await rootBundle.loadString(filePath);
     var cosa = jsonDecode(jsonString);
