@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491102081207",
+    "project_id": "corso-2d9a0",
+    "storage_bucket": "corso-2d9a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491102081207:android:ba251a5bc48b5479dd7d32",
+        "android_client_info": {
+          "package_name": "com.example.netflix_corso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLnGHbf6pD4mg9qJPnIm-r2fx5jMBU-F8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
