@@ -1,4 +1,5 @@
 import 'package:corso_rest_api/model.dart';
+import 'package:corso_rest_api/movie_list.dart';
 import 'package:corso_rest_api/movie_repository.dart';
 import 'package:corso_rest_api/nasa_repository.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,14 @@ class SandBox extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () async {
-              MovieRepository().getAllMovies();
+              await MovieRepository().getAllMovies();
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MovieList(),
+                ),
+              );
             },
             child: const Text('Get movies'),
           ),
